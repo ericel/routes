@@ -55,7 +55,7 @@ Main Components
   -o-transform: translateY(80px);
   transform: translateY(80px);
 }
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {
   .cd-header.nav-is-visible {
     -webkit-transform: translateY(170px);
     -moz-transform: translateY(170px);
@@ -64,7 +64,7 @@ Main Components
     transform: translateY(170px);
   }
 }
-
+*/
 .cd-logo {
   float: left;
   margin-top: 28px;
@@ -116,13 +116,14 @@ Main Components
   top: 8px;
 }
 .nav-is-visible .cd-3d-nav-trigger span {
-  /* hide line in the center */
-  background-color: rgba(255, 255, 255, 0);
+  /* hide line in the center 
+  background-color: rgba(255, 255, 255, 0);*/
   background-color: #333;
 }
 .nav-is-visible .cd-3d-nav-trigger span::before, .nav-is-visible .cd-3d-nav-trigger span::after {
   /* keep visible other 2 lines */
   background-color: white;
+  background-color: #333;
 }
 .nav-is-visible .cd-3d-nav-trigger span::before {
   -webkit-transform: translateY(8px) rotate(-45deg);
@@ -172,11 +173,12 @@ Main Components
   -moz-transition: -moz-transform 0.5s 0s, visibility 0.5s 0s;
   transition: transform 0.5s 0s, visibility 0.5s 0s;
 }
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {
   .cd-3d-nav-container {
     height: 170px;
   }
 }
+*/
 
 .cd-3d-nav {
   /* this is the 3D rotating navigation */
@@ -295,7 +297,7 @@ Main Components
   -moz-transition: opacity 0.5s 0s, visibility 0s 0.5s;
   transition: opacity 0.5s 0s, visibility 0s 0.5s;
 }
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {
   .cd-3d-nav a {
     padding: 7.6em 1em 0;
     color: #ffffff;
@@ -305,7 +307,7 @@ Main Components
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* truncate text with ellipsis if too long */
-    white-space: nowrap;
+  /*  white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -319,7 +321,7 @@ Main Components
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-}
+}*/
 
 .cd-marker {
   /* line at the bottom of nav selected item */
